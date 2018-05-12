@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 export default class Colors extends Component {
   constructor(props) {
     super(props);
-
+    
     this.state = {
 
     };
@@ -15,7 +15,7 @@ export default class Colors extends Component {
     return (
       <div>
         {
-          [].map((color) => (
+          this.props.colors.colors.map((color) => ( //usando key 
             <p key={color}>{color}</p>
           ))
         }

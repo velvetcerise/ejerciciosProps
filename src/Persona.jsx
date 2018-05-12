@@ -18,9 +18,9 @@ export default class Persona extends Component {
   render() {
     return (
       <div>
-        <p>Name: </p>
-        <p>Age: </p>
-        <button onClick={() => ('')}>Dí Hola</button>
+        <p>Name: {this.props.data.persona.name} </p>
+        <p>Age: {this.props.data.persona.age} </p>
+        <button onClick={() => ('')}>Dí Hola {this.props.sayHi}</button>
       </div>
     );
   }
